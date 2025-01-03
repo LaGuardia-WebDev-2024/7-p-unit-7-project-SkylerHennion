@@ -1,10 +1,10 @@
 //🟢Setup Procedure - Runs Once to Set The Canvas
 void setup() {
-    size(400, 400); 
+    size(800, 600); 
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var pig = 20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -16,10 +16,17 @@ draw = function(){
     
   }
   
-  //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
+
   
-  fireworkX = fireworkX + 1;
+  //🎯Animation Code Goes Here
+  
+  
+  
+  
+  fill(229, 119,84)
+  ellipse(100,100,100,100)
+  
+  pig = pig + 1;
 
 }
 

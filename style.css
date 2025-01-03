@@ -1,20 +1,22 @@
 body {
-  background-color: black;
+  background-image: url(https://www.katebackdrop.com/cdn/shop/products/E.jpg?v=1661234103&width=1000);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: white;
+  margin: auto;
+  width: 60%;
 }
 
+h1 {
+  text-align: center;
+  background-color: brown;
+  border: 10px dashed gold;
+  padding: 15px;
+}
 
 #myCanvas {
-  background-image: url("https://images.pexels.com/photos/1387577/pexels-photo-1387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-color: lightblue;
   background-size: 400px;
-  border-radius: 30px;
-  border: 1px solid rgb(255,245,227);
+  border: 50px outset #92611d;
 }
-
-.main{
-  display: flex;
-  text-align: left;
-  justify-content: space-around;
-}
-
