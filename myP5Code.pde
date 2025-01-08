@@ -4,9 +4,10 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var pig = 20;
-var pigColor = 1;
-var pigColorDir = 2;
+var pig = 750;
+var pig1 = 400;
+var pigColor = .05;
+var pigColorDir = 1;
 var conveyer = 1;
 
 
@@ -87,21 +88,37 @@ draw = function(){
   
   
    //third pig
-  fill(229-pigColor, 149+pigColor,  120-pigColor)
-  rect(-370+pig, 480,20,60)
-  rect(-310+pig, 480,20,60)
-  ellipse(-330+pig, 430, 120,150)
-  ellipse(-330+pig, 330,100,100)
-  quad(-370+pig, 300, -390+pig, 285, -405+pig, 315)
-  quad(-290+pig, 300,  -270+pig, 285,  -255+pig, 315)
-  rect(-370+pig, 400,20,60)
-  rect(-310+pig, 400,20,60)
-  ellipse(-330+pig, 340, 60, 30)
+  fill(229-pigColor, 149-pigColor,  120+pigColor)
+  rect(-420+pig, 480,20,60)
+  rect(-360+pig, 480,20,60)
+  ellipse(-380+pig, 430, 120,150)
+  ellipse(-380+pig, 330,100,100)
+  quad(-420+pig, 300, -440+pig, 285, -455+pig, 315)
+  quad(-340+pig, 300,  -320+pig, 285,  -305+pig, 315)
+  rect(-420+pig, 400,20,60)
+  rect(-360+pig, 400,20,60)
+  ellipse(-380+pig, 340, 60, 30)
   fill(0,0,0)
-  ellipse(-340+pig, 340, 5,10)
-  ellipse(-320+pig, 340, 5,10)
-  ellipse(-310+pig, 320, 10,10)
-  ellipse(-350+pig, 320, 10,10)
+  ellipse(-390+pig, 340, 5,10)
+  ellipse(-370+pig, 340, 5,10)
+  ellipse(-360+pig, 320, 10,10)
+  ellipse(-400+pig, 320, 10,10)
+  
+  
+  
+  
+   //fourth pig
+  fill(229-pigColor, 149+pigColor,  120-pigColor)
+  rect(-690+pig, 325, 20,28)
+  ellipse(-630+pig, 430, 120,150)
+  ellipse(-630+pig, 330,100,100)
+  quad(-585+pig, 300, -620+pig, 290,  -610+pig, 320)
+  rect(-660+pig, 400,20,60)
+  rect(-640+pig, 480,20,60)
+  fill(0,0,0)
+  ellipse(-650+pig, 320, 10,10)
+  
+  
   
   
   
@@ -118,22 +135,24 @@ draw = function(){
   conveyer = -200;
   }
   
- pig = pig + 1;
+ //pig = pig + 1;
   pigColor = pigColor + pigColorDir;
 
 
-if(pig < 200){
-   pigColorDir = -.8;
+if(pigColor < 60){
+   pigColorDir = -.5;
+   pigColor=1;
   }
   
-  if(pig > 200){
-   pigColorDir = .8;
+  if(pigColor > 400){
+   pigColorDir = .5;
+   pigColor=255;
   }
   
   
   
   if(pig > 800){
-   pig = -100;
+   pig = -200;
   }
   
   
