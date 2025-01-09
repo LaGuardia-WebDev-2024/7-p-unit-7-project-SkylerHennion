@@ -15,6 +15,10 @@ h1 {
   padding: 15px;
 }
 
+h2{color:hotpink;}
+
+ol{color:magenta;}
+
 #myCanvas {
   background-color: lightblue;
   width: 500px;
