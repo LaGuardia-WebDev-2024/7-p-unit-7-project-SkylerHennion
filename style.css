@@ -10,18 +10,15 @@ body {
 
 h1 {
   text-align: center;
-  background-color: brown;
-  border: 10px dashed gold;
+  background-color: rgb(229, 149,  120);
+  border: 5px solid rgb(130,130,130);
   padding: 15px;
 }
 
-h2{color:hotpink;}
-
-ol{color:magenta;}
 
 #myCanvas {
   background-color: lightblue;
-  width: 500px;
+  width: 700px;
   background-size: 400px;
   border: 50px outset #92611d;
 }

@@ -14,6 +14,8 @@ var conveyer = 1;
 var pigColor = 0;
 var pigColorDir = 0.5;
 
+var words = 1;
+
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -26,15 +28,37 @@ draw = function(){
   
   fill(130,130,130)
   strokeWeight(3)
-  rect(0, 500, 800, 100)
+  rect(0, 500, 800,100)
   
 
   
   //🎯Animation Code Goes Here
   
   
-  //conveyer belt
+  //words
+  strokeWeight(16)
+  stroke(255,255,255)
+  fill(0,0,0,0)
+  line(230, 70, 230, 205+words)
+  ellipse(270,107, 80,80+words)
+  line(340, 70, 340, 140+words)
+  ellipse(410, 107, 80, 80+words)
+  line(450, 70, 450, 170+words)
+  arc(415, 170+words,70,80+words,radians(0),radians(180))
+  arc(520, 95,80,50+words,radians(180),radians(320))
+  arc(520, 90,80,30+words,radians(90),radians(180))
+  arc(520, 120+words,70,30+words,radians(270),radians(360))
+  arc(515, 120+words,80, 60+words,radians(0),radians(150))
   
+  
+  
+  
+  
+  
+  
+  //conveyer belt
+  stroke(0,0,0)
+  strokeWeight(2)
   line(0+conveyer,   500,   0+conveyer, 600)
   line(150+conveyer, 500, 150+conveyer, 600)
   line(300+conveyer, 500, 300+conveyer, 600)
@@ -42,8 +66,6 @@ draw = function(){
   line(600+conveyer, 500, 600+conveyer, 600)
   line(750+conveyer, 500, 750+conveyer, 600)
   line(900+conveyer, 500, 900+conveyer, 600)
-  
-  
   
   
   
@@ -113,7 +135,7 @@ draw = function(){
   
    //fourth pig
   fill(229, 149+pigColor,  120)
-  arc(230+pig4, 470,100,50,radians(180),radians(200))
+  arc(200+pig4, 470,50,20,radians(0),radians(190))
   rect(70+pig4, 325, 20,28)
   ellipse(130+pig4, 430, 120,150)
   ellipse(130+pig4, 330,100,100)
@@ -165,6 +187,8 @@ draw = function(){
  pig5 = pig5 +1;
  
  
+ 
+ words = words +.05;
  
  
  pigColor += pigColorDir;
