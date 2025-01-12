@@ -4,17 +4,22 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var pig =  100;
-var pig2 = 350;
-var pig3 = 600;
-var pig4 = 850;
-var pig5 = 1100;
 var conveyer = 1;
+var words = 1;
+
+var pig =  -70;
+var pig2 = 210;
+var pig3 = 480;
+var pig4 = 750;
+var pig5 = 1030;
+var pig6 = 1300;
+var pig7 = 1570;
+var pig8 = 1630;
 
 var pigColor = 0;
 var pigColorDir = 0.5;
 
-var words = 1;
+
 
 
 //🟢Draw Procedure - Runs on Repeat
@@ -39,16 +44,16 @@ draw = function(){
   strokeWeight(16)
   stroke(255,255,255)
   fill(0,0,0,0)
-  line(230, 70, 230, 205+words)
-  ellipse(270,107, 80,80+words)
-  line(340, 70, 340, 140+words)
-  ellipse(410, 107, 80, 80+words)
-  line(450, 70, 450, 170+words)
-  arc(415, 170+words,70,80+words,radians(0),radians(180))
-  arc(520, 95,80,50+words,radians(180),radians(320))
-  arc(520, 90,80,30+words,radians(90),radians(180))
-  arc(520, 120+words,70,30+words,radians(270),radians(360))
-  arc(515, 120+words,80, 60+words,radians(0),radians(150))
+  line(240, 70, 240, 205+words)
+  ellipse(280,107, 80,80+words)
+  line(350, 70, 350, 140+words)
+  ellipse(420, 107, 80, 80+words)
+  line(460, 70, 460, 170+words)
+  arc(425, 170+words,70,80+words,radians(0),radians(180))
+  arc(530, 95,80,50+words,radians(180),radians(320))
+  arc(530, 90,80,30+words,radians(90),radians(180))
+  arc(530, 120+words,70,30+words,radians(270),radians(360))
+  arc(525, 120+words,80, 60+words,radians(0),radians(150))
   
   
   
@@ -71,10 +76,9 @@ draw = function(){
   
   
   
-    strokeWeight(2)
   
   //first pig
-  fill(229+pigColor, 149+pigColor,  120)
+  fill(229+pigColor, 149+pigColor,  120-pigColor)
   rect(150+pig, 480,20,60)
   rect(90+pig, 480,20,60)
   ellipse(130+pig, 430, 120,150)
@@ -94,7 +98,7 @@ draw = function(){
   
   
   //second pig
-  fill(229+pigColor, 149,  120+pigColor)
+  fill(229+pigColor, 149-pigColor,  120+pigColor)
   rect(150+pig2, 480,20,60)
   rect(90+pig2, 480,20,60)
   ellipse(130+pig2, 430, 120,150)
@@ -114,7 +118,7 @@ draw = function(){
   
   
    //third pig
-  fill(229, 149+pigColor,  120+pigColor)
+  fill(229-pigColor, 149+pigColor,  120-pigColor)
   rect(150+pig3, 480,20,60)
   rect(90+pig3, 480,20,60)
   ellipse(130+pig3, 430, 120,150)
@@ -134,7 +138,7 @@ draw = function(){
   
   
    //fourth pig
-  fill(229, 149+pigColor,  120)
+  fill(229+pigColor, 149,  120+pigColor)
   arc(200+pig4, 470,50,20,radians(0),radians(190))
   rect(70+pig4, 325, 20,28)
   ellipse(130+pig4, 430, 120,150)
@@ -149,7 +153,7 @@ draw = function(){
   
   
     //fifth pig
-  fill(229+pigColor, 149,  120+pigColor)
+  fill(229-pigColor, 149-pigColor,  120+pigColor)
   rect(150+pig5, 480,20,60)
   rect(90+pig5, 480,20,60)
   ellipse(130+pig5, 430, 120,150)
@@ -170,30 +174,98 @@ draw = function(){
   
   
   
+  //sixth pig
+  fill(229, 149-pigColor,  120)
+  rect(150+pig6, 480,20,60)
+  rect(90+pig6, 480,20,60)
+  ellipse(130+pig6, 430, 120,150)
+  ellipse(130+pig6, 330,100,100)
+  quad(170+pig6, 300, 190+pig6, 285, 205+pig6, 315)
+  quad(90+pig6, 300,  70+pig6, 285,  55+pig6, 315)
+  rect(150+pig6, 400,20,60)
+  rect(90+pig6, 400,20,60)
+  ellipse(130+pig6, 340, 60, 30)
+  fill(0,0,0)
+  ellipse(140+pig6, 340, 5,10)
+  ellipse(120+pig6, 340, 5,10)
+  ellipse(110+pig6, 320, 10,10)
+  ellipse(150+pig6, 320, 10,10)
+  
+  
+  
+  
+  //seventh pig
+  fill(229-pigColor, 149+pigColor,  120+pigColor)
+  rect(150+pig7, 480,20,60)
+  rect(90+pig7, 480,20,60)
+  ellipse(130+pig7, 430, 120,150)
+  ellipse(130+pig7, 330,100,100)
+  quad(170+pig7, 300, 190+pig7, 285, 205+pig7, 315)
+  quad(90+pig7, 300,  70+pig7, 285,  55+pig7, 315)
+  rect(150+pig7, 400,20,60)
+  rect(90+pig7, 400,20,60)
+  ellipse(130+pig7, 340, 60, 30)
+  fill(0,0,0)
+  ellipse(140+pig7, 340, 5,10)
+  ellipse(120+pig7, 340, 5,10)
+  ellipse(110+pig7, 320, 10,10)
+  ellipse(150+pig7, 320, 10,10)
+  
+  
+  
+  
+  
+  //eighth pig
+  fill(229-pigColor, 149,  120-pigColor)
+  rect(370+pig8, 480,20,60)
+  rect(310+pig8, 480,20,60)
+  ellipse(350+pig8, 430, 120,150)
+  ellipse(350+pig8, 330,100,100)
+  quad(390+pig8, 300, 410+pig8, 285, 425+pig8, 315)
+  quad(310+pig8, 300,  290+pig8, 285,  275+pig8, 315)
+  rect(370+pig8, 400,20,60)
+  rect(310+pig8, 400,20,60)
+  ellipse(350+pig8, 340, 60, 30)
+  fill(0,0,0)
+  ellipse(360+pig8, 340, 5,10)
+  ellipse(340+pig8, 340, 5,10)
+  ellipse(330+pig8, 320, 10,10)
+  ellipse(370+pig8, 320, 10,10)
+  
+  
+  
+  
   
   //🎯 real animating stuff
   
   
-  conveyer = conveyer + 1;
+  conveyer = conveyer + 2;
   
   if(conveyer > 100){
   conveyer = -200;
   }
   
- pig =  pig + 1;
- pig2 = pig2 +1;
- pig3 = pig3 +1;
- pig4 = pig4 +1;
- pig5 = pig5 +1;
+ pig =  pig  +2;
+ pig2 = pig2 +2;
+ pig3 = pig3 +2;
+ pig4 = pig4 +2;
+ pig5 = pig5 +2;
+ pig6 = pig6 +2;
+ pig7 = pig7 +2;
+ pig8 = pig8 +2;
  
  
  
- words = words +.05;
+ words = words +.5;
+ 
+ if(words > 100){
+     words=1;
+  }
  
  
  pigColor += pigColorDir;
 
-  if(pigColor >(255-89)){
+  if(pigColor >( 255-90)){
      pigColorDir = -.5;
      pigColor=0;
   }
@@ -206,24 +278,36 @@ draw = function(){
   
   
   
-  if(pig > 1105){
-   pig = -200;
+  if(pig > 1751){
+   pig = -450;
   }
   
-  if(pig2 > 1105){
-   pig2 = -200;
+  if(pig2 > 1751){
+   pig2 = -450;
   }
   
-  if(pig3 > 1105){
-   pig3 = -200;
+  if(pig3 > 1751){
+   pig3 = -450;
   }
   
-  if(pig4 > 1105){
-   pig4 = -200;
+  if(pig4 > 1751){
+   pig4 = -450;
   }
   
-  if(pig5 > 1105){
-   pig5 = -200;
+  if(pig5 > 1751){
+   pig5 = -450;
+  }
+  
+  if(pig6 > 1751){
+   pig6 = -450;
+  }
+  
+  if(pig7 > 1751){
+   pig7 = -450;
+  }
+  
+  if(pig8 > 1751){
+   pig8 = -450;
   }
   
 }
